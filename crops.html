@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kisan Mitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar (reuse from index) -->
+<nav class="navbar">
+  <h2>Kisan Mitra</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="crops.html">Crop Advisory</a>
+    <a href="weather.html">Weather</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page">
+
+  <h1>Crop Advisory System</h1>
+
+  <div class="form-box">
+
+    <input type="text" id="location" placeholder="Enter Location (optional)">
+    
+    <input type="text" id="crop" placeholder="Enter Crop Name">
+    
+    <select id="soil">
+      <option value="">Select Soil Type</option>
+      <option>Black Soil</option>
+      <option>Red Soil</option>
+      <option>Loamy Soil</option>
+      <option>Clay Soil</option>
+      <option>Sandy Soil</option>
+    </select>
+
+    <select id="season">
+      <option value="">Select Season</option>
+      <option>Kharif</option>
+      <option>Rabi</option>
+      <option>Zaid</option>
+    </select>
+
+    <button onclick="getAdvisory()">Get Advisory</button>
+
+  </div>
+
+  <div class="result" id="result"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

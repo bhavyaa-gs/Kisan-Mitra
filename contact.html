@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kisan Mitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Kisan Mitra</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="crops.html">Crop Advisory</a>
+    <a href="weather.html">Weather</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<h1 class="page-title">📞 Contact Us</h1>
+
+<div class="page">
+  <div class="form-box">
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+    <input type="text" id="phone" placeholder="Enter your phone number">
+    <textarea id="message" placeholder="Enter your message" rows="4"></textarea>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+    <div class="result" id="contactResult"></div>
+
+  </div>
+</div>
+
+<script src="contact.js"></script>
+</body>
+</html>

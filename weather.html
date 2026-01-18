@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kisan Mitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Kisan Mitra</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="crops.html">Crop Advisory</a>
+    <a href="weather.html">Weather</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page">
+
+  <h1>Weather Advisory</h1>
+
+  <div class="form-box">
+    <input type="text" id="city" placeholder="Enter City Name">
+    <button onclick="getWeather()">Get Weather</button>
+  </div>
+
+  <div class="result" id="weatherResult"></div>
+
+</section>
+
+<script src="weather.js"></script>
+</body>
+</html>

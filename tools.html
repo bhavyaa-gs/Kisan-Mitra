@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kisan Mitra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Kisan Mitra</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="crops.html">Crop Advisory</a>
+    <a href="weather.html">Weather</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<h1 class="page-title">🛠️ Farming Tools</h1>
+
+<div class="tools-container">
+
+  <!-- Fertilizer -->
+  <div class="tool-card">
+    <img src="image/fertilizertools.jpg" class="tool-img">
+    <h3>🌿 Fertilizer Calculator</h3>
+    <input id="area" type="number"  placeholder="Enter land area (acres)">
+    <button onclick="fertilizerCalc()">Calculate</button>
+    <p id="fertilizerResult"></p>
+  </div>
+
+  <!-- Calendar -->
+  <div class="tool-card">
+    <img src="image/cropcalendar.jpg" class="tool-img">
+    <h3>📅 Crop Calendar</h3>
+    <select id="calendarCrop">
+      <option value="">Select Crop</option>
+      <option>Wheat</option>
+      <option>Rice</option>
+      <option>Maize</option>
+    </select>
+    <button onclick="cropCalendar()">Show</button>
+    <p id="calendarResult"></p>
+  </div>
+
+  <!-- Cost -->
+  <div class="tool-card">
+    <img src="image/cost.jpg" class="tool-img">
+    <h3>💰 Cost Estimation</h3>
+    <input id="costArea" type="number" placeholder="Area in acres">
+    <button onclick="costCalc()">Estimate</button>
+    <p id="costResult"></p>
+  </div>
+
+  <!-- Yield -->
+  <div class="tool-card">
+    <img src="image/yield.jpg" class="tool-img">
+    <h3>🌾 Yield Prediction</h3>
+    <input id="yieldArea" type="number" placeholder="Area in acres">
+    <button onclick="yieldCalc()">Predict</button>
+    <p id="yieldResult"></p>
+  </div>
+
+</div>
+
+<script src="tools.js"></script>
+</body>
+</html>
